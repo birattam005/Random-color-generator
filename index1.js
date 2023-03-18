@@ -1,9 +1,9 @@
 const containerEl = document.querySelector(".container");
 
-for (let index = 0; index < 30; index++) {
-  const colorContainerEl = document.createElement("div");
-  colorContainerEl.classList.add("color-container");
-  containerEl.appendChild(colorContainerEl);
+for (let index = 0; index < 30; index++) {        // This loop is used to create div containers
+  const colorContainerEl = document.createElement("div");   // this method create div inside .container class
+  colorContainerEl.classList.add("color-container");    // this method added class(color-container) to new div
+  containerEl.appendChild(colorContainerEl);        // this method added all container one after annother
 }
 
 const colorContainerEls = document.querySelectorAll(".color-container");
